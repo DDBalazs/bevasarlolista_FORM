@@ -38,9 +38,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lbadat1 = new System.Windows.Forms.Label();
-            this.lbadat2 = new System.Windows.Forms.Label();
             this.lbadat3 = new System.Windows.Forms.Label();
+            this.lbadat2 = new System.Windows.Forms.Label();
+            this.lbadat1 = new System.Windows.Forms.Label();
             this.btsave = new System.Windows.Forms.Button();
             this.xbmennyiseg = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -106,6 +106,7 @@
             this.txar.Name = "txar";
             this.txar.Size = new System.Drawing.Size(100, 20);
             this.txar.TabIndex = 6;
+            this.txar.TextChanged += new System.EventHandler(this.txar_TextChanged);
             // 
             // label5
             // 
@@ -138,14 +139,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Adatok";
             // 
-            // lbadat1
+            // lbadat3
             // 
-            this.lbadat1.AutoSize = true;
-            this.lbadat1.Location = new System.Drawing.Point(7, 20);
-            this.lbadat1.Name = "lbadat1";
-            this.lbadat1.Size = new System.Drawing.Size(132, 13);
-            this.lbadat1.TabIndex = 0;
-            this.lbadat1.Text = "Fizetendő ár:  5489 Ft";
+            this.lbadat3.AutoSize = true;
+            this.lbadat3.Location = new System.Drawing.Point(10, 69);
+            this.lbadat3.Name = "lbadat3";
+            this.lbadat3.Size = new System.Drawing.Size(156, 13);
+            this.lbadat3.TabIndex = 2;
+            this.lbadat3.Text = "Legdrágább termék:  kávé";
             // 
             // lbadat2
             // 
@@ -156,14 +157,14 @@
             this.lbadat2.TabIndex = 1;
             this.lbadat2.Text = "Tételek száma: 8 db";
             // 
-            // lbadat3
+            // lbadat1
             // 
-            this.lbadat3.AutoSize = true;
-            this.lbadat3.Location = new System.Drawing.Point(10, 69);
-            this.lbadat3.Name = "lbadat3";
-            this.lbadat3.Size = new System.Drawing.Size(156, 13);
-            this.lbadat3.TabIndex = 2;
-            this.lbadat3.Text = "Legdrágább termék:  kávé";
+            this.lbadat1.AutoSize = true;
+            this.lbadat1.Location = new System.Drawing.Point(7, 20);
+            this.lbadat1.Name = "lbadat1";
+            this.lbadat1.Size = new System.Drawing.Size(132, 13);
+            this.lbadat1.TabIndex = 0;
+            this.lbadat1.Text = "Fizetendő ár:  5489 Ft";
             // 
             // btsave
             // 
@@ -183,6 +184,7 @@
             this.xbmennyiseg.Name = "xbmennyiseg";
             this.xbmennyiseg.Size = new System.Drawing.Size(58, 21);
             this.xbmennyiseg.TabIndex = 12;
+            this.xbmennyiseg.SelectedIndexChanged += new System.EventHandler(this.xbmennyiseg_SelectedIndexChanged);
             // 
             // label10
             // 
